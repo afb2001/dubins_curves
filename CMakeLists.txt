@@ -39,7 +39,7 @@ include_directories(
 
 add_library(dubins src/dubins.c)
 
-add_executable(${PROJECT_NAME}_node src/dubins_curves_node.cpp src/dubins.c)
+add_executable(${PROJECT_NAME}_node src/dubins_curves_node.cpp src/dubins.c src/DubinsPath.cpp src/DubinsPath.h)
 
 add_dependencies(${PROJECT_NAME}_node ${PROJECT_NAME}_generate_messages_cpp)
 
